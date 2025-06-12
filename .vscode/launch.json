@@ -1,0 +1,38 @@
+{
+    "version": "2.0.0",
+    "configurations": [
+        {
+            "name": "Launch (MSVC)",
+            "type": "cppvsdbg",
+            "request": "launch",
+            "stopAtEntry": false,
+
+            "cwd": "${workspaceFolder}",
+            "preLaunchTask": "zig-b debug",
+
+            "program": "${workspaceFolder}/zig-out/bin/<your_executable>",
+            "args": [],
+
+            "console": "internalConsole",
+        },
+        {
+            "name": "Launch (LLDB)",
+            "type": "lldb",
+            "request": "launch",
+            "stopOnEntry": false,
+
+            "cwd": "${workspaceFolder}",
+            "preLaunchTask": "zig-b debug",
+
+            "program": "${workspaceFolder}/zig-out/bin/<your_executable>",
+            // "windows": {
+            //     "env": {
+            //         "LLDB_USE_NATIVE_PDB_READER ": "1"
+            //     },
+            // },
+            "args": [],
+
+            "console": "internalConsole",
+        }
+    ]
+}

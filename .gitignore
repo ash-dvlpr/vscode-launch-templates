@@ -1,0 +1,6 @@
+# Ignore other user configs
+.vscode/*
+
+# Allow launch configuration files
+!.vscode/*launch.json
+!.vscode/*tasks.json
